@@ -17,4 +17,23 @@ int main()
     return 0;
 }
 
-//Write definition of stat() here 
+//Write definition of stat() here
+float sum;
+ void stat(const double a[],int n ,double b[]){
+    double max = 0,min = 0;
+    for (int i =0;i<n;i++){
+		b[0] += a[i]/n; 
+		    sum += pow(a[i],2);
+    }
+    b[1] = sqrt((sum/n)-pow(b[0],2));
+	for(int j=0;j<n;j++){
+		if(b[3]>a[j]){
+		b[3]=a[j];
+	}
+		if(b[2]<a[j]){
+			b[2]=a[j];
+		}
+	}
+	
+	
+}
